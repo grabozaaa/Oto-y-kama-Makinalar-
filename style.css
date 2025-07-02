@@ -1,0 +1,35 @@
+body {
+  font-family: sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #ffc107;
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.product {
+  background: white;
+  margin: 20px auto;
+  padding: 15px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 0 10px gray;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
