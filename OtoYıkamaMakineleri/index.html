@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Oto Yıkama Makineleri</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f1f1f1;
+    }
+    header {
+      background-color: #ffb300;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    nav {
+      background-color: orange;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 30px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .product {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin: 20px 0;
+      padding: 20px;
+      text-align: center;
+    }
+    .product img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .comment-box {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin: 40px auto;
+      max-width: 800px;
+    }
+    .comment-box .rating {
+      direction: rtl;
+      unicode-bidi: bidi-override;
+      font-size: 24px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    .comment-box .rating input {
+      display: none;
+    }
+    .comment-box .rating label {
+      color: #ccc;
+      cursor: pointer;
+    }
+    .comment-box .rating label:hover,
+    .comment-box .rating label:hover ~ label,
+    .comment-box .rating input:checked ~ label {
+      color: gold;
+    }
+    .comment-box textarea {
+      width: 100%;
+      height: 100px;
+      padding: 10px;
+      resize: none;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .comment-box button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: orange;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>Oto Yıkama Makineleri</header>
+
+  <nav>
+    <a href="#anasayfa">Anasayfa</a>
+    <a href="#hakkimizda">Hakkımızda</a>
+    <a href="#iletisim">İletişim</a>
+  </nav>
+
+  <!-- Hakkımızda -->
+  <section id="hakkimizda">
+    <h2>Hakkımızda</h2>
+    <p>Oto yıkama makineleri, yedek parçaları ve servis hizmetlerinde uzmanlaşmış firmayız. Kaliteli ürün, hızlı teslimat ve teknik destek garantisi sunuyoruz.</p>
+    <p>En iyi oto yıkama makineleri, yedek parça, satış ve servis hizmetleri bizden sorulur!</p>
+  </section>
+
+  <!-- Anasayfa -->
+  <section id="anasayfa">
+    <h2>Popüler Ürünlerimiz</h2>
+
+    <div class="product">
+      <img src="images/dolphin.jpg" alt="Dolphin Makinası">
+      <h2>Dolphin Sıcak Su Makinası</h2>
+      <p>Ürün Adı: Dolphin</p>
+      <p>Sıcak suyla araç yıkama için kullanılan dayanıklı makinedir.</p>
+    </div>
+
+    <div class="product">
+      <img src="images/makine.jpg" alt="Sanayi Süpürge">
+      <h2>Sanayi Tipi Süpürge</h2>
+      <p>Ürün Adı: Sanayi Süpürgesi</p>
+      <p>3 motorlu, güçlü emiş sistemine sahip endüstriyel süpürge.</p>
+    </div>
+
+    <div class="product">
+      <img src="images/nozul.jpg" alt="Nozul Başlıkları">
+      <h2>Nozul Başlıkları</h2>
+      <p>Ürün Adı: Nozul Başlığı</p>
+      <p>Pulverizatör başlıklar, paslanmaz çelikten üretilmiştir.</p>
+    </div>
+
+    <div class="product">
+      <img src="images/supurge.jpg" alt="Pompa Grubu">
+      <h2>Pompa Grubu</h2>
+      <p>Ürün Adı: Pompa Seti</p>
+      <p>Profesyonel yıkama sistemleri için yüksek basınçlı pompa seti.</p>
+    </div>
+
+    <div class="product">
+      <img src="images/usta.jpg" alt="Servis Hizmeti">
+      <h2>Servis ve Montaj</h2>
+      <p>Ürün Adı: Teknik Servis</p>
+      <p>Deneyimli teknik ekibimizle servis ve montaj hizmeti sağlıyoruz.</p>
+    </div>
+
+    <div class="product">
+      <img src="images/valf.jpg" alt="Basınç Valfi">
+      <h2>Basınç Regülatör Vanası</h2>
+      <p>Ürün Adı: Regülatör Valf</p>
+      <p>Pompa sistemleri için sıcak suya dayanıklı pirinç valf.</p>
+    </div>
+
+    <div class="product">
+      <img src="images/yay.jpg" alt="Yaylı Valf Takımı">
+      <h2>Pompa Yay Valf Takımı</h2>
+      <p>Ürün Adı: Yay Takımı</p>
+      <p>Pompalarda yüksek basınç dengelemesi için kullanılan yay takımı.</p>
+    </div>
+  </section>
+
+  <!-- İletişim -->
+  <section id="iletisim">
+    <h2>İletişim Bilgileri</h2>
+    <p><strong>Telefon:</strong> +90 538 065 21 11</p>
+    <p><strong>E-posta:</strong> <a href="mailto:timulasu@hotmail.com">timulasu@hotmail.com</a></p>
+    <p><strong>Instagram:</strong> <a href="https://instagram.com/dolfinservis_umit_usta" target="_blank">@dolfinservis_umit_usta</a></p>
+    <p><strong>Facebook:</strong> <a href="https://facebook.com/Dolfin-%C3%9Cmit-Usta" target="_blank">Dolfin Ümit Usta</a></p>
+  </section>
+
+  <!-- Yorum ve Puanlama en alt -->
+  <section class="comment-box">
+    <h3>Yorum ve Puan Ver</h3>
+    <div class="rating">
+      <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+      <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+      <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+      <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+      <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+    </div>
+    <textarea placeholder="Görüşlerinizi yazın..."></textarea>
+    <br>
+    <button>Gönder</button>
+  </section>
+
+  <footer>
+    © 2025 Oto Yıkama Makineleri | E-posta: timulasu@hotmail.com | IG: @dolfinservis_umit_usta | FB: Dolfin Ümit Usta
+  </footer>
+
+</body>
+</html>
